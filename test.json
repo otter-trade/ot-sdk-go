@@ -1,0 +1,163 @@
+{
+    "symbol": "OGNTRY",
+    "priceChange": "-0.102","priceCh
+angePercent":"-4.035","weightedAvgPrice":"2.53887092","prevClosePrice":"2.53","lastPrice":"2.426","lastQty":"84","bidPrice":"2.422","askPrice":"2.427","openPrice":"2.528","highPrice":"2.63","lowPrice":"2.4","volume":"4557172","quoteVolume":"11570071.458","openTime":"2023-09-16T18: 44: 31.355+08: 00","closeTime":"2023-09-17T18: 44: 31.355+08: 00","firstId":247469,"lastId":250471,
+    "count": 3003
+},
+{
+    "symbol": "BTCFDUSD",
+    "priceChange": "61.72",
+    "priceChangePercent": "0.233",
+    "weightedAvgPrice": "26542.87702413",
+    "prevClosePrice": "26544.33",
+    "lastPrice": "26606.41","las
+tQty":"0.00289","bidPrice":"26605.7","askPrice":"26606.41","openPrice":"26544.69","highPrice":"26628","lowPrice":"26427","volume":"4660.14141","quoteVolume":"123693560.3606832","openTi
+me":"2023-09-16T18: 44: 42.365+08: 00","closeTime":"2023-09-17T18: 44: 42.365+08: 00","firstId":5638168,"lastId":5998370,"count":360203},{"symbol":"ETHFDUSD","priceChange":"-2.6","priceChang
+ePercent":"-0.159","weightedAvgPrice":"1630.6687306","prevClosePrice":"1636.99","lastPrice":"1634.41","lastQty":"0.0832","bidPrice":"1634.65","askPrice":"1635.09","openPrice":"1637.01",
+    "highPrice": "1640",
+    "lowPrice": "1620.36",
+    "volume": "312.1893",
+    "quoteVolume": "509077.329539",
+    "openTime": "2023-09-16T18:44:30.561+08:00",
+    "closeTime": "2023-09-17T18:44:30.561+08:00","first
+Id":31122,"lastId":31902,"count":781},{"symbol":"ASRTRY","priceChange":"-0.52","priceChangePercent":"-0.861","weightedAvgPrice":"60.24758985","prevClosePrice":"60.29","lastPrice":"59.8
+8","lastQty":"131.5","bidPrice":"60.05","askPrice":"60.3","openPrice":"60.4","highPrice":"60.84","lowPrice":"59.59","volume":"7320.3","quoteVolume":"441030.432","openTime":"2023-09-16T
+18: 44: 42.955+08: 00","closeTime":"2023-09-17T18: 44: 42.955+08: 00","firstId":48845,"lastId":49044,"count":200},{"symbol":"ATMTRY","priceChange":"-0.6","priceChangePercent":"-0.879","weigh
+tedAvgPrice":"67.78051572","prevClosePrice":"68.07","lastPrice":"67.64","lastQty":"77.2","bidPrice":"67.95","askPrice":"68.23","openPrice":"68.24","highPrice":"68.62","lowPrice":"66.65
+","volume":"17096.6","quoteVolume":"1158816.365","openTime":"2023-09-16T18: 44: 01.541+08: 00","closeTime":"2023-09-17T18: 44: 01.541+08: 00","firstId":88918,"lastId":89341,"count":424},{"sy
+mbol":"ACMTRY","priceChange":"-0.67","priceChangePercent":"-1.319","weightedAvgPrice":"50.28358137","prevClosePrice":"50.75","lastPrice":"50.13","lastQty":"0.5","bidPrice":"50.11","ask
+Price":"50.18","openPrice":"50.8","highPrice":"50.91","lowPrice":"49.85","volume":"61651.3","quoteVolume":"3100048.16","openTime":"2023-09-16T18: 43: 55.754+08: 00","closeTime":"2023-09-1
+7T18: 43: 55.754+08: 00","firstId":41462,"lastId":42475,"count":1014},{"symbol":"BARTRY","priceChange":"-0.29","priceChangePercent":"-0.455","weightedAvgPrice":"64.33780536","prevClosePri
+ce":"63.65","lastPrice":"63.38","lastQty":"3.4","bidPrice":"63.59","askPrice":"63.64","openPrice":"63.67","highPrice":"65.7","lowPrice":"63","volume":"141193.6","quoteVolume":"9084086.
+355","openTime":"2023-09-16T18: 43: 23.671+08: 00","closeTime":"2023-09-17T18: 43: 23.671+08: 00","firstId":147127,"lastId":150730,"count":3604},{"symbol":"JUVTRY","priceChange":"-0.08","pri
+ceChangePercent":"-0.144","weightedAvgPrice":"56.01548645","prevClosePrice":"55.38","lastPrice":"55.38","lastQty":"4.6","bidPrice":"55.39","askPrice":"55.58","openPrice":"55.46","highP
+rice":"57.11","lowPrice":"54.93","volume":"54602.5","quoteVolume":"3058585.599","openTime":"2023-09-16T18: 44: 28.214+08: 00","closeTime":"2023-09-17T18: 44: 28.214+08: 00","firstId":36715,"
+lastId":37691,"count":977},{"symbol":"PSGTRY","priceChange":"1.24","priceChangePercent":"1.476","weightedAvgPrice":"87.61064005","prevClosePrice":"83.75","lastPrice":"85.26","lastQty":"1.8",
+    "bidPrice": "85.23",
+    "askPrice": "85.26",
+    "openPrice": "84.02",
+    "highPrice": "94",
+    "lowPrice": "82.85",
+    "volume": "451802.3",
+    "quoteVolume": "39582688.677",
+    "openTime":"2023-09-16T18:43:59.376
++08: 00","closeTime":"2023-09-17T18: 43: 59.376+08: 00","firstId":90441,"lastId":101997,"count":11557},{"symbol":"SEIBNB","priceChange":"-0.0000107","priceChangePercent":"-1.759","weighted
+AvgPrice":"0.00063637","prevClosePrice":"0.0006092","lastPrice":"0.0005976","lastQty":"16.8","bidPrice":"0.0005981","askPrice":"0.000599","openPrice":"0.0006083","highPrice":"0.0006947
+","lowPrice":"0.0005916","volume":"2237751.6","quoteVolume":"1424.04387152","openTime":"2023-09-16T18: 44: 39.959+08: 00","closeTime":"2023-09-17T18: 44: 39.959+08: 00","firstId":225616,"las
+tId":231516,"count":5901},{"symbol":"SEIBTC","priceChange":"-9e-8","priceChangePercent":"-1.829","weightedAvgPrice":"0.0000052","prevClosePrice":"0.00000492","lastPrice":"0.00000483","
+lastQty":"1804.1","bidPrice":"0.00000483","askPrice":"0.00000484","openPrice":"0.00000492","highPrice":"0.00000562","lowPrice":"0.00000479","volume":"11327328.4","quoteVolume":"58.8561
+1683","openTime":"2023-09-16T18: 44: 40.942+08: 00","closeTime":"2023-09-17T18: 44: 40.942+08: 00","firstId":452818,"lastId":476227,"count":23410},{"symbol":"SEIFDUSD","priceChange":"-0.0024
+","priceChangePercent":"-1.835","weightedAvgPrice":"0.13887698","prevClosePrice":"0.1307","lastPrice":"0.1284","lastQty":"717","bidPrice":"0.1286","askPrice":"0.1288","openPrice":"0.13
+08","highPrice":"0.1492","lowPrice":"0.1269","volume":"2449790.1","quoteVolume":"340219.44192","openTime":"2023-09-16T18: 44: 36.061+08: 00","closeTime":"2023-09-17T18: 44: 36.061+08: 00","f
+irstId":81503,"lastId":85859,"count":4357},{"symbol":"SEITRY","priceChange":"-0.046","priceChangePercent":"-1.3","weightedAvgPrice":"3.76866937","prevClosePrice":"3.54","lastPrice":"3.
+493","lastQty":"332","bidPrice":"3.492","askPrice":"3.493","openPrice":"3.539","highPrice":"4.05","lowPrice":"3.445","volume":"74365363.6","quoteVolume":"280258467.7891","openTime":"20
+23-09-16T18: 44: 41.458+08: 00","closeTime":"2023-09-17T18: 44: 41.458+08: 00","firstId":1544174,"lastId":1631394,"count":87221},{"symbol":"SEIUSDT","priceChange":"-0.002","priceChangePercen
+t":"-1.531","weightedAvgPrice":"0.13786209","prevClosePrice":"0.1306","lastPrice":"0.1286","lastQty":"10563.6","bidPrice":"0.1286","askPrice":"0.1287","openPrice":"0.1306","highPrice":"0.1493",
+    "lowPrice": "0.1267",
+    "volume": "400829266.3",
+    "quoteVolume": "55259162.16206",
+    "openTime": "2023-09-16T18:44:39.392+08:00",
+    "closeTime": "2023-09-17T18:44:39.392+08:00",
+    "firstId": 4687
+090,
+    "lastId": 4900001,
+    "count": 212912
+},
+{
+    "symbol": "CYBERBNB",
+    "priceChange": "-0.001611",
+    "priceChangePercent": "-6.443",
+    "weightedAvgPrice": "0.02405985",
+    "prevClosePrice": "0.025124","lastPrice":"0.023393","lastQty":"1.37","bidPrice":"0.023486","askPrice":"0.023514","openPrice":"0.025004","highPrice":"0.025989","lowPrice":"0.023247","volume":"11333.98","quoteVolume":"272.693
+86355","openTime":"2023-09-16T18: 44: 41.823+08: 00","closeTime":"2023-09-17T18: 44: 41.823+08: 00","firstId":99969,"lastId":100386,"count":418},{"symbol":"CYBERBTC","priceChange":"-0.000014
+22","priceChangePercent":"-6.977","weightedAvgPrice":"0.00019595","prevClosePrice":"0.00020365","lastPrice":"0.00018959","lastQty":"3.53","bidPrice":"0.00018985","askPrice":"0.00019001
+","openPrice":"0.00020381","highPrice":"0.00020904","lowPrice":"0.00018792","volume":"190325.72","quoteVolume":"37.29490112","openTime":"2023-09-16T18: 44: 35.626+08: 00","closeTime":"202
+3-09-17T18: 44: 35.626+08: 00","firstId":388058,"lastId":392500,"count":4443},{"symbol":"CYBERFDUSD","priceChange":"-0.361","priceChangePercent":"-6.693","weightedAvgPrice":"5.27402236","
+prevClosePrice":"5.388","lastPrice":"5.033","lastQty":"1.01","bidPrice":"5.05","askPrice":"5.055","openPrice":"5.394","highPrice":"5.539","lowPrice":"4.985","volume":"6790.25","quoteVo
+lume":"35811.93033","openTime":"2023-09-16T18: 44: 41.827+08: 00","closeTime":"2023-09-17T18: 44: 41.827+08: 00","firstId":45958,"lastId":46544,"count":587},{"symbol":"CYBERTRY","priceChange
+":"-9.35","priceChangePercent":"-6.378","weightedAvgPrice":"143.25928348","prevClosePrice":"146.6","lastPrice":"137.24","lastQty":"9.43","bidPrice":"137.21","askPrice":"137.24","openPr
+ice":"146.59","highPrice":"150.53","lowPrice":"135.4","volume":"1258690.9","quoteVolume":"180319156.456","openTime":"2023-09-16T18: 44: 43.18+08: 00","closeTime":"2023-09-17T18: 44: 43.18+0
+8: 00","firstId":2508275,"lastId":2535258,"count":26984},{"symbol":"CYBERUSDT","priceChange":"-0.355","priceChangePercent":"-6.567","weightedAvgPrice":"5.23972259","prevClosePrice":"5.4
+05","lastPrice":"5.051","lastQty":"2","bidPrice":"5.051","askPrice":"5.052","openPrice":"5.406","highPrice":"5.55","lowPrice":"4.98","volume":"4166239.99","quoteVolume":"21829941.7834",
+    "openTime": "2023-09-16T18:44:43.035+08:00",
+    "closeTime": "2023-09-17T18:44:43.035+08:00",
+    "firstId": 10199190,
+    "lastId": 10304846,
+    "count": 105657
+},
+{
+    "symbol": "CYBERTUSD",
+    "priceChange":"-0.373","priceChangePercent":"-6.879","weightedAvgPrice":"5.32127774","prevClosePrice":"5.413","lastPrice":"5.049","lastQty":"8.33","bidPrice":"5.053","askPrice":"5.064","openPrice":"5.422","highPrice": "5.55",
+    "lowPrice": "4.99",
+    "volume": "7620.26",
+    "quoteVolume": "40549.51988",
+    "openTime": "2023-09-16T18:44:42.829+08:00",
+    "closeTime": "2023-09-17T18:44:42.829+08:00",
+    "firstId": 348
+80,
+    "lastId": 35224,
+    "count": 345
+},
+{
+    "symbol": "SEITUSD",
+    "priceChange": "-0.0029",
+    "priceChangePercent": "-2.207",
+    "weightedAvgPrice": "0.1385857",
+    "prevClosePrice": "0.131",
+    "lastPrice": "0.1285","l
+astQty":"1579.4","bidPrice":"0.1286","askPrice":"0.1289","openPrice":"0.1314","highPrice":"0.1494","lowPrice":"0.1273","volume":"2709378","quoteVolume":"375481.05668","openTime":"2023-
+09-16T18: 44: 38.09+08: 00","closeTime":"2023-09-17T18: 44: 38.09+08: 00","firstId":30396,"lastId":33254,"count":2859},{"symbol":"LPTTRY","priceChange":"-5.8","priceChangePercent":"-3.483","
+weightedAvgPrice":"163.2516003","prevClosePrice":"166.3","lastPrice":"160.7","lastQty":"45.37","bidPrice":"160.6","askPrice":"160.7","openPrice":"166.5","highPrice":"167.8","lowPrice":"159",
+    "volume": "19747.27",
+    "quoteVolume": "3223773.429",
+    "openTime": "2023-09-16T18:44:40.862+08:00",
+    "closeTime": "2023-09-17T18:44:40.862+08:00",
+    "firstId": 150373,
+    "lastId": 151710,
+    "count": 13
+38
+},
+{
+    "symbol": "UNITRY",
+    "priceChange": "0.2",
+    "priceChangePercent": "0.169",
+    "weightedAvgPrice": "118.40093183",
+    "prevClosePrice": "117.8",
+    "lastPrice": "118.2",
+    "lastQty": "11.03",
+    "bidPrice":"118
+.3","askPrice":"118.4","openPrice":"118","highPrice":"119.5","lowPrice":"116","volume":"32309.71","quoteVolume":"3825499.771","openTime":"2023-09-16T18: 41: 21.949+08: 00","closeTime":"20
+23-09-17T18: 41: 21.949+08: 00","firstId":23089,"lastId":24641,"count":1553},{"symbol":"SOLFDUSD","priceChange":"-0.11","priceChangePercent":"-0.573","weightedAvgPrice":"18.94029261","pre
+vClosePrice":"19.21","lastPrice":"19.08","lastQty":"0.53","bidPrice":"19.09","askPrice":"19.12","openPrice":"19.19","highPrice":"19.22","lowPrice":"18.79","volume":"1362.57","quoteVolu
+me":"25807.4745","openTime":"2023-09-16T18: 44: 23.643+08: 00","closeTime":"2023-09-17T18: 44: 23.643+08: 00","firstId":2074,"lastId":2198,"count":125},{"symbol":"TOMOTRY","priceChange":"-0.
+25","priceChangePercent":"-0.769","weightedAvgPrice":"32.26965973","prevClosePrice":"32.62","lastPrice":"32.25","lastQty":"154","bidPrice":"32.21","askPrice":"32.25","openPrice":"32.5",
+    "highPrice": "32.66",
+    "lowPrice": "31.8",
+    "volume": "169551.5",
+    "quoteVolume": "5471369.211",
+    "openTime": "2023-09-16T18:44:41.347+08:00",
+    "closeTime": "2023-09-17T18:44:41.347+08:00",
+    "firstId": 58790,
+    "lastId": 60367,
+    "count": 1578
+},
+{
+    "symbol": "UNFITRY",
+    "priceChange": "-18.6",
+    "priceChangePercent": "-8.219",
+    "weightedAvgPrice": "221.69810191",
+    "prevClosePrice": "226.3",
+    "lastPrice":"207.7","lastQty":"1.7","bidPrice":"207.6","askPrice":"207.8","openPrice":"226.3","highPrice":"230.2","lowPrice":"207.5","volume":"126812.96","quoteVolume":"28114192.529","openTime":"2023-09
+-16T18: 44: 37.058+08: 00","closeTime":"2023-09-17T18: 44: 37.058+08: 00","firstId":170067,"lastId":176738,"count":6672},{"symbol":"XRPFDUSD","priceChange":"-0.0029","priceChangePercent":"-0
+.579","weightedAvgPrice":"0.49535421","prevClosePrice":"0.5009","lastPrice":"0.498","lastQty":"77","bidPrice":"0.4977","askPrice":"0.4986","openPrice":"0.5009","highPrice":"0.5026","lo
+wPrice":"0.4921","volume":"66151","quoteVolume":"32768.1765","openTime":"2023-09-16T18: 44: 38.786+08: 00","closeTime":"2023-09-17T18: 44: 38.786+08: 00","firstId":3312,"lastId":3498,"count": 187
+},
+{
+    "symbol": "DOGEFDUSD",
+    "priceChange": "0.00001",
+    "priceChangePercent": "0.016",
+    "weightedAvgPrice": "0.06217048",
+    "prevClosePrice": "0.06237",
+    "lastPrice": "0.06232",
+    "lastQty": "5392","bidP
+rice":"0.06231","askPrice":"0.06244","openPrice":"0.06231","highPrice":"0.0625","lowPrice":"0.06136","volume":"38352","quoteVolume":"2384.36241","openTime":"2023-09-16T18: 44: 41.737+08: 00","closeTime":"2023-09-17T18: 44: 41.737+08: 00","firstId":2469,"lastId":2516,"count":48}
