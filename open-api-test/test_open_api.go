@@ -1,4 +1,4 @@
-package test
+package main
 
 import (
 	"bytes"
@@ -10,8 +10,7 @@ import (
 	"net/http"
 
 	// "reflect"
-	"sort"
-	"testing"
+
 	"time"
 
 	// "github.com/otter-trade/coin-exchange-api/config"
@@ -164,74 +163,74 @@ type Candle struct {
 	CreateAt                int64  `json:"createAt,omitempty" json:"createAt,omitempty"`
 }
 
-func TestGetInstrument(t *testing.T) {
-	initOkx()
-	resp, err := ok.GetInstruments(context.Background(), &okx.InstrumentsFetchParams{
-		InstrumentType: "OPTION",
-		Underlying:     "SOL-USD",
-	})
-	if err != nil {
-		fmt.Println("GetInstruments err ", err)
-	}
-	jsonResp, err := json.Marshal(resp)
-	if err != nil {
-		fmt.Println("Error marshaling response to JSON:", err)
-		return
-	}
+// func TestGetInstrument(t *testing.T) {
+// 	initOkx()
+// 	resp, err := ok.GetInstruments(context.Background(), &okx.InstrumentsFetchParams{
+// 		InstrumentType: "OPTION",
+// 		Underlying:     "SOL-USD",
+// 	})
+// 	if err != nil {
+// 		fmt.Println("GetInstruments err ", err)
+// 	}
+// 	jsonResp, err := json.Marshal(resp)
+// 	if err != nil {
+// 		fmt.Println("Error marshaling response to JSON:", err)
+// 		return
+// 	}
 
-	fmt.Println("JSON response:", string(jsonResp))
-}
+// 	fmt.Println("JSON response:", string(jsonResp))
+// }
 
-func TestOKXGetTickers(t *testing.T) {
-	initOkx()
-	resp, err := ok.GetTickers(context.Background(), "OPTION", "", "SOL-USD")
-	if err != nil {
-		t.Error("Okx GetTickers() error", err)
-	} else {
-		fmt.Println("Okx GetTickers len: \n", len(resp))
-		//fmt.Println("Okx GetTickers: \n", resp)
-	}
-	jsonResp, err := json.Marshal(resp)
-	if err != nil {
-		fmt.Println("Error marshaling response to JSON:", err)
-		return
-	}
+// func TestOKXGetTickers(t *testing.T) {
+// 	initOkx()
+// 	resp, err := ok.GetTickers(context.Background(), "OPTION", "", "SOL-USD")
+// 	if err != nil {
+// 		t.Error("Okx GetTickers() error", err)
+// 	} else {
+// 		fmt.Println("Okx GetTickers len: \n", len(resp))
+// 		//fmt.Println("Okx GetTickers: \n", resp)
+// 	}
+// 	jsonResp, err := json.Marshal(resp)
+// 	if err != nil {
+// 		fmt.Println("Error marshaling response to JSON:", err)
+// 		return
+// 	}
 
-	fmt.Println("JSON response:", string(jsonResp))
-}
+// 	fmt.Println("JSON response:", string(jsonResp))
+// }
 
-func TestGetExchangeInfo(t *testing.T) {
-	initBinance()
-	resp, err := b.GetExchangeInfo(context.Background())
-	if err != nil {
-		t.Error(err)
-	}
-	jsonResp, err := json.Marshal(resp)
-	if err != nil {
-		fmt.Println("Error marshaling response to JSON:", err)
-		return
-	}
+// func TestGetExchangeInfo(t *testing.T) {
+// 	initBinance()
+// 	resp, err := b.GetExchangeInfo(context.Background())
+// 	if err != nil {
+// 		t.Error(err)
+// 	}
+// 	jsonResp, err := json.Marshal(resp)
+// 	if err != nil {
+// 		fmt.Println("Error marshaling response to JSON:", err)
+// 		return
+// 	}
 
-	fmt.Println("JSON response:", string(jsonResp))
+// 	fmt.Println("JSON response:", string(jsonResp))
 
-}
+// }
 
-func TestBinanceGetTickers(t *testing.T) {
-	initBinance()
-	resp, err := b.GetTickers(context.Background())
-	if err != nil {
-		t.Error("Binance TestGetTickers error", err)
-	}
-	jsonResp, err := json.Marshal(resp)
-	if err != nil {
-		fmt.Println("Error marshaling response to JSON:", err)
-		return
-	}
+// func TestBinanceGetTickers(t *testing.T) {
+// 	initBinance()
+// 	resp, err := b.GetTickers(context.Background())
+// 	if err != nil {
+// 		t.Error("Binance TestGetTickers error", err)
+// 	}
+// 	jsonResp, err := json.Marshal(resp)
+// 	if err != nil {
+// 		fmt.Println("Error marshaling response to JSON:", err)
+// 		return
+// 	}
 
-	fmt.Println("JSON response:", string(jsonResp))
-}
+// 	fmt.Println("JSON response:", string(jsonResp))
+// }
 
-func TestDelay(t *testing.T) {
+func TestDelay() {
 	// //bianace延时测试
 	// Start := time.Now().Add(-1 * time.Minute * time.Duration(100) * time.Duration(1))
 	// pair := currency.NewPair(currency.BTC, currency.USDT)
@@ -321,12 +320,12 @@ func TestDelay(t *testing.T) {
 		InstId: "BTC-USDT",
 		Bar:    "1min",
 		//Before: 0,
-		Limit: 100,
+		Limit: 500,
 	}
 
 	bufs, err := json.Marshal(data)
 	if err != nil {
-		t.Fatalf("json marshal failed:%+v\n", err)
+		fmt.Printf("json marshal failed:%+v\n", err)
 	}
 
 	// t.Logf("%s\n", bufs)
@@ -347,7 +346,7 @@ func TestDelay(t *testing.T) {
 
 	byts, err := io.ReadAll(respOpenAPI.Body)
 	if err != nil {
-		t.Fatalf("read body  failed:%+v\n", err)
+		fmt.Printf("read body  failed:%+v\n", err)
 	}
 
 	//t.Logf("%s\n", byts)
@@ -355,25 +354,24 @@ func TestDelay(t *testing.T) {
 	var res *Body
 	err = json.Unmarshal(byts, &res)
 	if err != nil {
-		t.Fatalf("json unMarshal failed:%+v\n", err)
+		fmt.Printf("json unMarshal failed:%+v\n", err)
 	}
 
 	var respList *MarketCandlesResp
 
 	dataByts, err := json.Marshal(res.Data)
 	if err != nil {
-		t.Fatalf("json Marshal data  failed:%+v\n", err)
+		fmt.Printf("json Marshal data  failed:%+v\n", err)
 	}
 
 	err = json.Unmarshal(dataByts, &respList)
 	if err != nil {
-		t.Fatalf("json Unmarshal data  failed:%+v\n", err)
+		fmt.Printf("json unMarshal failed:%+v\n", err)
 	}
 
 	//res 处理
 	if res != nil && len(respList.List) > 0 {
 		// 测试数据的连贯性
-		fmt.Printf("has data \n")
 		for key, val := range respList.List {
 			preIndex := key - 1
 			if preIndex < 0 {
@@ -406,7 +404,7 @@ func TestDelay(t *testing.T) {
 			}
 		}
 	} else {
-		fmt.Printf("no data \n")
+		fmt.Printf("返回数据为空 \n")
 	}
 
 	//计算延时时间
@@ -428,16 +426,27 @@ func TestDelay(t *testing.T) {
 
 	duration := endOpenAPI.Sub(startOpenAPI)
 	milliseconds := duration.Milliseconds()
-	fmt.Printf("OpenAPI Http时间延迟为 %d 毫秒\n", milliseconds)
+
+	if milliseconds > 500 {
+		fmt.Printf("OpenAPI Http时间延迟为 %d 毫秒, 大于500ms \n", milliseconds)
+	} else {
+		fmt.Printf("OpenAPI Http时间延迟为 %d 毫秒\n", milliseconds)
+	}
 }
 
-func TestDelayLoop(t *testing.T) {
+func main() {
 	// initOkx()
 	// initBinance()
-	for i := 0; i < 100; i++ {
-		go TestDelay(t)
-		time.Sleep(400)
+
+	for i := 0; i < 5; i++ {
+		go func() {
+			for {
+				TestDelay()
+				time.Sleep(time.Second)
+			}
+		}()
 	}
+
 	select {}
 }
 
@@ -541,37 +550,37 @@ func TestDelayLoop(t *testing.T) {
 
 // }
 
-type Person struct {
-	Name string
-	Age  int
-	Tp   time.Time
-}
+// type Person struct {
+// 	Name string
+// 	Age  int
+// 	Tp   time.Time
+// }
 
-func TestResverSlice(t *testing.T) {
+// func TestResverSlice(t *testing.T) {
 
-	resp := []*Person{{
-		Name: "a",
-		Age:  1,
-		Tp:   time.Now().Add(time.Hour * 2),
-	}, {
-		Name: "b",
-		Age:  2,
-		Tp:   time.Now().Add(time.Hour * 3),
-	}, {
-		Name: "c",
-		Age:  3,
-		Tp:   time.Now().Add(time.Hour * 4),
-	}, {
-		Name: "d",
-		Age:  4,
-		Tp:   time.Now().Add(time.Hour * 5),
-	}}
+// 	resp := []*Person{{
+// 		Name: "a",
+// 		Age:  1,
+// 		Tp:   time.Now().Add(time.Hour * 2),
+// 	}, {
+// 		Name: "b",
+// 		Age:  2,
+// 		Tp:   time.Now().Add(time.Hour * 3),
+// 	}, {
+// 		Name: "c",
+// 		Age:  3,
+// 		Tp:   time.Now().Add(time.Hour * 4),
+// 	}, {
+// 		Name: "d",
+// 		Age:  4,
+// 		Tp:   time.Now().Add(time.Hour * 5),
+// 	}}
 
-	sort.Slice(resp, func(i, j int) bool {
-		//return resp[i].Age > resp[j].Age
-		return resp[i].Tp.After(resp[j].Tp)
-	})
-	byts, _ := json.Marshal(resp)
+// 	sort.Slice(resp, func(i, j int) bool {
+// 		//return resp[i].Age > resp[j].Age
+// 		return resp[i].Tp.After(resp[j].Tp)
+// 	})
+// 	byts, _ := json.Marshal(resp)
 
-	t.Logf("%s\n", byts)
-}
+// 	t.Logf("%s\n", byts)
+// }
