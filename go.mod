@@ -1,4 +1,4 @@
-module ot-sdk-go
+module github.com/otter-trade/ot-sdk-go
 
 go 1.20
 
