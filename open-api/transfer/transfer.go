@@ -22,7 +22,7 @@ type MarketResult struct {
 	Msg  string             `json:"msg"`
 }
 
-func Transfer(openApiData [][]any) (list []*Candle, err error) {
+func Transfer(openApiData [][]any) (list []Candle, err error) {
 
 	for _, data := range openApiData {
 
@@ -36,9 +36,17 @@ func Transfer(openApiData [][]any) (list []*Candle, err error) {
 			return nil, errors.New("OkxData transfer error")
 		}
 
+		if len(OkxData) < 5 {
+			return nil, errors.New("OkxData 数据丢失")
+		}
+
 		BinanceData, ok := data[2].([]any)
 		if !ok {
 			return nil, errors.New("BinanceData transfer error")
+		}
+
+		if len(BinanceData) < 5 {
+			return nil, errors.New("BinanceData 数据丢失")
 		}
 
 		//Okx
@@ -85,7 +93,7 @@ func Transfer(openApiData [][]any) (list []*Candle, err error) {
 			return nil, errors.New("binanceVolume transfer error")
 		}
 
-		list = append(list, &Candle{
+		list = append(list, Candle{
 			TimeStamp:           int64(timeStamp),
 			OkxOpenPrice:        okxOpenPrice,
 			OkxHighestPrice:     okxHighestPrice,
