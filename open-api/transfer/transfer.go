@@ -32,8 +32,7 @@ type CandlesReq struct {
 }
 
 type MarketResult struct {
-	Code int64 `json:"code"`
-	//Data map[string][][]any `json:"data"`
+	Code int64   `json:"code"`
 	Data [][]any `json:"data"` //去掉 list 字段，直接返回数据
 	Msg  string  `json:"msg"`
 }
