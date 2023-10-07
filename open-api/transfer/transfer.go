@@ -1,6 +1,14 @@
 package transfer
 
-import "errors"
+import (
+	"encoding/json"
+	"errors"
+	"fmt"
+	"github.com/zeromicro/go-zero/core/logx"
+	"io"
+	"net/http"
+	"strings"
+)
 
 type Candle struct {
 	TimeStamp           int64  `json:"time_stamp"`
@@ -16,10 +24,60 @@ type Candle struct {
 	BinanceVolume       string `json:"binance_volume"`
 }
 
+type CandlesReq struct {
+	InstId string `json:"instId"`
+	Bar    string `json:"bar"`
+	Before int64  `json:"before,optional"`
+	Limit  int64  `json:"limit,optional"`
+}
+
 type MarketResult struct {
-	Code int64              `json:"code"`
-	Data map[string][][]any `json:"data"`
-	Msg  string             `json:"msg"`
+	Code int64 `json:"code"`
+	//Data map[string][][]any `json:"data"`
+	Data [][]any `json:"data"` //去掉 list 字段，直接返回数据
+	Msg  string  `json:"msg"`
+}
+
+/**
+* @param url open-api接口
+* @param req 请求参数
+ */
+func GetCandles(url string, req *CandlesReq) (list []Candle, err error) {
+
+	reqByts, err := json.Marshal(req)
+	if err != nil {
+		logx.Errorw("json marshal err", logx.Field("req", req), logx.Field("err", err))
+		return nil, err
+	}
+
+	resp, err := http.Post(url, "application/json", strings.NewReader(fmt.Sprintf("%s", reqByts)))
+	if err != nil {
+		logx.Errorw("http post err", logx.Field("err", err))
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	bodyByts, err := io.ReadAll(resp.Body)
+	if err != nil {
+		logx.Errorw("read request body err", logx.Field("err", err))
+		return nil, err
+	}
+
+	res := &MarketResult{}
+	err = json.Unmarshal(bodyByts, res)
+	if err != nil {
+		logx.Errorw("json unmarshal err", logx.Field("err", err))
+		return nil, err
+	}
+
+	candles, err := Transfer(res.Data)
+	if err != nil {
+		logx.Errorw("transfer data err", logx.Field("err", err))
+		return nil, err
+	}
+
+	return candles, nil
+
 }
 
 func Transfer(openApiData [][]any) (list []Candle, err error) {
